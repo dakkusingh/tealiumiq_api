@@ -140,7 +140,7 @@ class TealiumClient {
         $url,
         [
           'query'   => $parameters,
-//          'Accept'  => 'application/json',
+      // 'Accept'  => 'application/json',.
         ]
       );
 
@@ -154,8 +154,8 @@ class TealiumClient {
       $this->loggerFactory->get('tealium_api')->error("@message", ['@message' => $e->getMessage()]);
       return FALSE;
     }
-  }  
-  
+  }
+
   /**
    * Build default args.
    *
